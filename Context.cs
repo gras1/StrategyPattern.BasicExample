@@ -1,16 +1,12 @@
 ﻿namespace StrategyPattern.BasicExample
 {
-    /// <summary>
-    /// The 'Context' class
-    /// </summary>
     public class Context
     {
-        private Strategy _strategy;
-
-        // Constructor
-        public Context(Strategy strategy)
+        private readonly IStrategy _strategy;
+        
+        public Context(IStrategy strategy)
         {
-            this._strategy = strategy;
+            _strategy = strategy;
         }
 
         public void ContextInterface()

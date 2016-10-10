@@ -6,10 +6,8 @@ namespace StrategyPattern.BasicExample
     {
         static void Main(string[] args)
         {
-            Context context;
-
             // Three contexts following different strategies
-            context = new Context(new ConcreteStrategyA());
+            var context = new Context(new ConcreteStrategyA());
             context.ContextInterface();
 
             context = new Context(new ConcreteStrategyB());

@@ -2,12 +2,9 @@ using System;
 
 namespace StrategyPattern.BasicExample
 {
-    /// <summary>
-    /// A 'ConcreteStrategy' class
-    /// </summary>
-    public class ConcreteStrategyA : Strategy
+    public class ConcreteStrategyA : IStrategy
     {
-        public override void AlgorithmInterface()
+        public void AlgorithmInterface()
         {
             Console.WriteLine("Called ConcreteStrategyA.AlgorithmInterface()");
         }
